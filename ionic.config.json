@@ -1,0 +1,8 @@
+{
+  "name": "sms",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "9465ffc7"
+}
