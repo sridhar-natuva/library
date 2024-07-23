@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { BooksStore } from '../books.store';
 
 @Component({
   selector: 'app-tab1',
@@ -6,15 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
-  items = [
-    { name: 'book 1', catagery: 'science' },
-    { name: 'book 2', catagery: 'science' },
-    { name: 'book 3', catagery: 'science' },
-    { name: 'book 4', catagery: 'science' },
-    { name: 'book 5', catagery: 'science' },
-    { name: 'book 6', catagery: 'science' },
-    { name: 'book 7', catagery: 'science' }
-  ]
+  readonly store = inject(BooksStore);
   constructor() { }
 
 }

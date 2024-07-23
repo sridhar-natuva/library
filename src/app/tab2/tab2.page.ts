@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { UserStore } from '../user.store';
 
 @Component({
   selector: 'app-tab2',
@@ -6,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page {
-
-  constructor() {}
+  readonly store = inject(UserStore);
+  constructor() { }
 
 }
